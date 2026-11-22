@@ -1,0 +1,107 @@
+/* MindBridge AI Custom Styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Header & Title */
+.main-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.sub-header {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Chat container & bubbles */
+.user-bubble {
+    background: #2563eb;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 18px 18px 4px 18px;
+    margin-bottom: 12px;
+    max-width: 85%;
+    margin-left: auto;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
+    line-height: 1.5;
+}
+
+.assistant-bubble {
+    background: #f8fafc;
+    color: #1e293b;
+    border: 1px solid #e2e8f0;
+    padding: 14px 20px;
+    border-radius: 18px 18px 18px 4px;
+    margin-bottom: 12px;
+    max-width: 88%;
+    margin-right: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    line-height: 1.6;
+}
+
+/* Dark mode compatibility */
+@media (prefers-color-scheme: dark) {
+    .assistant-bubble {
+        background: #1e293b;
+        color: #f1f5f9;
+        border-color: #334155;
+    }
+}
+
+/* Crisis Card */
+.crisis-card {
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+    border: 1px solid #f87171;
+    border-left: 6px solid #dc2626;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 16px 0;
+    color: #991b1b;
+}
+
+.crisis-card h4 {
+    color: #b91c1c;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+/* Citations & Sources */
+.citation-container {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px dashed #cbd5e1;
+    font-size: 0.85rem;
+}
+
+.citation-pill {
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0369a1;
+    border: 1px solid #bae6fd;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 6px;
+    margin-bottom: 4px;
+}
+
+/* Sidebar Document Card */
+.doc-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+}
